@@ -15,7 +15,7 @@ jimport('joomla.html.parameter');
 jimport('joomla.plugin.plugin');
 
 // Initiate class to hold plugin events
-class plgSystemModernizer extends JPlugin {
+class plgSystemFontawesomeness extends JPlugin {
 
 // Some params
     var $pluginName = 'fontawesomeness';
@@ -23,27 +23,33 @@ class plgSystemModernizer extends JPlugin {
     var $pluginNameHumanReadable = 'Modernizer Plugin';
     var $_firstInvocation = true;
 
+    public function __construct(&$subject, $config = array()) {
+        parent::__construct($subject, $config);
+        
+    }
+    
 //	TODO check if we need function onAfterRoute()  to accommodate JA T3 framework
     function onBeforeRender() {
         if ($this->_firstInvocation) { //avoid double execution
             $app = JFactory::getApplication();
-           // if (!$app->isAdmin()) { also in admin to get editor previews!
+            $options=$this->_getOpts();
+            if (!$app->isAdmin() || $options["inadmin"] ) { //also in admin to get editor previews!
                 // $cookiepath = $app->getCfg('cookie_path',JURI::root(true));
                 $this->_firstInvocation = false;
                 $doc = JFactory::getDocument();
                 
                 if ($doc->getType() == 'html') { //run only in html pages
-                    $options=$this->_getOpts();
+                
                     if ($options["fontawesome"]){
-                        $doc->addStylesheet(JURI::root(true).'/media/fontawesomeness/fontawesome/font-awesome.min.css?v=3.1.1');
+                        $doc->addStylesheet(JURI::root(true).'/media/fontawesomeness/assets/font-awesome/css/font-awesome.min.css?v=3.1.1');
                     }
                     if ($options["icomoon"]){
-                        $doc->addStylesheet(JURI::root(true).'/media/fontawesomeness/icomoon/style.css?v=450');
+                        $doc->addStylesheet(JURI::root(true).'/media/fontawesomeness/assets/icomoon/style.css?v=450');
             
                     }
                    
                 }
-            //} uncomment to not load in admin
+            } 
         }
         return true;
     }

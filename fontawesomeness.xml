@@ -40,6 +40,17 @@
 			<fieldset name="basic">
                             
                             <field
+                                   label="Load in administrator (e.g. for previews in editor)"
+                                   description=""
+                                   name="inadmin" 
+                                   type="radio"
+                                   class="btn-group"
+                                   default="yes">
+                                <option value="no">JNO</option>
+                                <option value="yes">JYES</option>
+                            </field>
+                            
+                            <field
                                    label="Load Fontawesome 3.1.1 (License: http://fortawesome.github.io/Font-Awesome/license/)"
                                    description="Load Fontawesome 3.1.1"
                                    name="fontawesome" 
