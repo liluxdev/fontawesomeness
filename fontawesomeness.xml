@@ -12,7 +12,9 @@
            
             <a href='http://creativeprogramming.it/opensource/fontawesomeness'>Fontawesomeness</a>
             an Icon font loader for Joomla! <hr/>Let's start becoming awesome: <a href='?option=com_plugins&view=plugins'> Enable the system plugin</a> and select the font you want to load.
-           ]]>
+            <br/>
+            <p/>
+            ]]>
         </description>
 	<updateservers>
 		<server type="extension" priority="1" name="Fontawesomeness Updates">http://creativeprogramming.it/dev/fontawesomeness/update-server/update.xml</server>
