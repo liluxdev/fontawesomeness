@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>Fontawesomeness</name>
+	<author>creativeprogramming.it</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>Copyright (c) 2013 Creativeprogramming.it  All rights reserved.</copyright>
+	<authorEmail>info@creativeprogramming.it</authorEmail>
+	<authorUrl>http://creativeprogramming.it</authorUrl>
+	<version>0.1</version>
+	<license>http://creativecommons.org/licenses/by/3.0/</license>
+	<description>Icon fonts loader for Joomla http://creativeprogramming.it/opensource/fontawesomeness</description>
+	<updateservers>
+		<server type="extension" priority="1" name="Fontawesomeness Updates">http://creativeprogramming.it/dev/fontawesomeness/update-server/update.xml</server>
+	</updateservers>
+        <!--
+        <languages folder="language">
+		 <language tag="en-GB">en-GB.plg_k2_climber_k2.ini</language>
+		 <language tag="it-IT">it-IT.plg_k2_climber_k2.ini</language>
+	 </languages>
+         -->
+        <files>
+		<filename plugin="fontawesomeness">fontawesomeness.php</filename>
+                <!--<folder>assets</folder>-->
+	</files>
+        
+     
+        <media destination="fontawesomeness" folder="media">
+	      <folder>assets</folder>
+	</media>
+     
+         <languages folder="language">
+                <language tag="en-GB">en-GB/en-GB.plg_system_fontawesomeness.ini</language>
+                <language tag="en-GB">en-GB/en-GB.plg_system_fontawesomeness.sys.ini</language>
+        </languages>
+	
+	<!-- Standard plugin parameters for Joomla! 1.6+ -->
+	<config>
+		<fields name="params">
+                    
+			<fieldset name="basic">
+                            
+                            <field
+                                   label="Load Fontawesome 3.1.1 (License: http://fortawesome.github.io/Font-Awesome/license/)"
+                                   description="Load Fontawesome 3.1.1"
+                                   name="fontawesome" 
+                                   type="radio"
+                                   class="btn-group"
+                                   default="yes">
+                                <option value="no">JNO</option>
+                                <option value="yes">JYES</option>
+                            </field>
+                            
+                            <field
+                                   label="Load 450 icons from IcoMoon (Keyamoon set, License: CreativeCommons 3.0)"
+                                   description="by Keyamoon http://icomoon.io/ under CC 3.0 License"
+                                   name="icomoon" 
+                                   type="radio"
+                                   class="btn-group"
+                                   default="no">
+                                <option value="no">JNO</option>
+                                <option value="yes">JYES</option>
+                             </field>
+                             
+                             
+                        </fieldset>
+                        
+		</fields>
+	</config>
+	
+</extension>
