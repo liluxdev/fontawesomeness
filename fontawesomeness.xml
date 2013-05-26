@@ -47,12 +47,12 @@
 			<fieldset name="basic">
                             
                             <field
-                                   label="Load in administrator (e.g. for previews in editor)"
-                                   description=""
+                                   label="Load fonts in administrator"
+                                   description="E.g. To get previews in editor (you need to use an HTML5 non-iframe based editor, something like the awesome and free StackIdeas's RedactorJs Editor"
                                    name="inadmin" 
                                    type="radio"
                                    class="btn-group"
-                                   default="yes">
+                                   default="no">
                                 <option value="no">JNO</option>
                                 <option value="yes">JYES</option>
                             </field>
@@ -63,7 +63,7 @@
                                    name="fontawesome" 
                                    type="radio"
                                    class="btn-group"
-                                   default="yes">
+                                   default="no">
                                 <option value="no">JNO</option>
                                 <option value="yes">JYES</option>
                             </field>
@@ -74,10 +74,13 @@
                                    name="icomoon" 
                                    type="radio"
                                    class="btn-group"
-                                   default="no">
+                                   default="yes">
                                 <option value="no">JNO</option>
                                 <option value="yes">JYES</option>
                              </field>
+                             
+                             
+                           
                              
                              
                         </fieldset>

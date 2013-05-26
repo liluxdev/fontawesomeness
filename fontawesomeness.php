@@ -34,10 +34,9 @@ class plgSystemFontawesomeness extends JPlugin {
             $app = JFactory::getApplication();
             $options=$this->_getOpts();
             if (!$app->isAdmin() || $options["inadmin"] ) { //also in admin to get editor previews!
-                // $cookiepath = $app->getCfg('cookie_path',JURI::root(true));
+              
                 $this->_firstInvocation = false;
                 $doc = JFactory::getDocument();
-                
                 if ($doc->getType() == 'html') { //run only in html pages
                 
                     if ($options["fontawesome"]){
@@ -70,8 +69,9 @@ class plgSystemFontawesomeness extends JPlugin {
 
     private function _getOpts() {
         return array(
-            "fontawesome" => $this->params->get('fontawesome', "yes") == "yes",
-            "icomoon" => $this->params->get('icomoon', "no") =="yes"
+            "fontawesome" => $this->params->get('fontawesome', "no") == "yes",
+            "icomoon" => $this->params->get('icomoon', "yes") =="yes",
+            "inadmin" => $this->params->get('inadmin', "yes") =="yes"
         );
     }
 
