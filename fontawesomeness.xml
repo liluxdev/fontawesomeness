@@ -11,7 +11,7 @@
 	<description><![CDATA[
            
             <a href='http://creativeprogramming.it/opensource/fontawesomeness'>Fontawesomeness</a>
-            an Icon font loader for Joomla!  Enable the system plugin and select the font you want to load.
+            an Icon font loader for Joomla! Let's start becoming awesome: <a href='?option=com_plugins&view=plugins'> Enable the system plugin</a> and select the font you want to load.
            ]]>
         </description>
 	<updateservers>
