@@ -39,7 +39,7 @@ class plgSystemFontawesomeness extends JPlugin {
                 $doc = JFactory::getDocument();
                 if ($doc->getType() == 'html') { //run only in html pages
                     if ($options["yootheme"]){
-                        $doc->addStylesheet(JURI::root(true).'/media/fontawesomeness/overrides/yootheme.css?v=0.6');
+                        $doc->addStylesheet(JURI::root(true).'/media/fontawesomeness/assets/overrides/yootheme.css?v=0.6');
                     }
                     if ($options["fontawesome"]){
                         $doc->addStylesheet(JURI::root(true).'/media/fontawesomeness/assets/font-awesome/css/font-awesome.min.css?v=3.1.1');
@@ -74,7 +74,7 @@ class plgSystemFontawesomeness extends JPlugin {
             "fontawesome" => $this->params->get('fontawesome', "no") == "yes",
             "icomoon" => $this->params->get('icomoon', "yes") =="yes",
             "inadmin" => $this->params->get('inadmin', "yes") =="yes",
-            "yooyheme" => $this->params->get('yootheme', "yes") =="yes"
+            "yootheme" => $this->params->get('yootheme', "yes") =="yes"
         );
     }
 
