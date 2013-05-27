@@ -1,0 +1,10 @@
+/* 
+    Document   : yootheme
+    Created on : 27-mag-2013, 14.45.56
+    Author     : Gargiulo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.module-title .icon{
+    background-image:none !important;
+}

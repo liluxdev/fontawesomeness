@@ -17,7 +17,7 @@
             ]]>
         </description>
 	<updateservers>
-		<server type="extension" priority="1" name="Fontawesomeness Updates">http://creativeprogramming.it/dev/fontawesomeness/update-server/update.xml</server>
+		<server type="extension" priority="1" name="Fontawesomeness">http://creativeprogramming.it/dev/fontawesomeness/update-server/update.xml</server>
 	</updateservers>
         <!--
         <languages folder="language">
@@ -46,16 +46,7 @@
                     
 			<fieldset name="basic">
                             
-                            <field
-                                   label="Load fonts in administrator"
-                                   description="E.g. To get previews in editor (you need to use an HTML5 non-iframe based editor, something like the awesome and free StackIdeas's RedactorJs Editor"
-                                   name="inadmin" 
-                                   type="radio"
-                                   class="btn-group"
-                                   default="no">
-                                <option value="no">JNO</option>
-                                <option value="yes">JYES</option>
-                            </field>
+                           
                             
                             <field
                                    label="Load Fontawesome 3.1.1 (License: http://fortawesome.github.io/Font-Awesome/license/)"
@@ -83,6 +74,33 @@
                            
                              
                              
+                        </fieldset>
+
+                        <fieldset name="FAWE_INTEGRATION">
+                             <field
+                                   label="Load fonts in administrator"
+                                   description="E.g. To get previews in editor (you need to use an HTML5 non-iframe based editor, something like the awesome and free StackIdeas's RedactorJs Editor"
+                                   name="inadmin" 
+                                   type="radio"
+                                   class="btn-group"
+                                   default="no">
+                                <option value="no">JNO</option>
+                                <option value="yes">JYES</option>
+                            </field>
+                            
+                            
+                            <field
+                                   label="Override YooTheme icons"
+                                   description="In Yootheme templates some icon class e.g. icon-download conflicts with icon fonts"
+                                   name="yootheme" 
+                                   type="radio"
+                                   class="btn-group"
+                                   default="yes">
+                                <option value="no">JNO</option>
+                                <option value="yes">JYES</option>
+                            </field>
+                            
+                            
                         </fieldset>
                         
 		</fields>
